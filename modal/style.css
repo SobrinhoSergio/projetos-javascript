@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(45deg, cyan, yellow);
+    font-family: "Helvetica";
+}
+
+#btn-open{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #faf8f0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-open:hover{
+    background-color: #f9f9f9;
+}
+
+.modal{
+    background-color: #faf8f0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    display: none;
+}
+
+.modal.active{
+    display: block;
+}
+
+
+.modal div#container{
+    padding: 30px;
+}
+
+.modal div#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#header #btn-close{
+    border: none;
+    outline: none;
+}
+
+#btn-close i{
+    font-size: 25px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+
+.modal div#footer{
+    border-top: 1px solid #ccc;
+
+}
+
+#footer p{
+    margin-top: 20px;
+    font-size: 19px
+
+}
+
+#footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+
+#footer ul li i{
+    font-size: 35px;
+    margin: 10px;
+    color: #aaa;
+
+}
+
+#footer ul li i:hover{
+    color: #bbb;
+
+}

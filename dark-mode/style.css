@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+:root{
+
+    --bg: #fff;
+    --bg-panel: #ebebeb;
+    --color-headings: #0077FF;
+    --color-text: #000;
+    --branco: #fff;
+    --zinza: #aeaeae;
+    --azul: #4070f4;
+      
+}
+
+/*-----Change Theme----*/
+
+.dark-theme{
+
+    --bg: #000;
+    --bg-panel: #191919;
+    --color-headings: #3664FF;
+    --color-text: #fff;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+          
+body{
+    
+    font-family: "Source Code Pro", monospace;
+    background-color: var(--bg);
+    color: var(--color-text);
+    
+}
+
+header{
+    background-color: var(--bg-panel);
+
+}
+
+#menu{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu h1{
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    margin-left: 10px;
+
+}
+
+li a{
+    padding: 10px;
+    color: var(--color-text);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:hover{
+    border-bottom: 2.5px solid var(--color-headings);
+}
+    
+
+li i{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+main{
+    background-color: var(--bg);
+}
+
+#conteudo{
+    padding: 60px 0;
+}
+
+#conteudo h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#conteudo p{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+}
+
+
+/*parte responsiva*/
+
+@media (max-width: 570px){
+
+    .container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    #menu{
+        margin: 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+   
+    nav{
+    
+    }
+
+    #conteudo{
+        margin-top: 20px;
+        padding: 0 40px;
+    }
+
+    
+}
+
