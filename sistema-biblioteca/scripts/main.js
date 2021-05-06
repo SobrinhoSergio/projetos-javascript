@@ -6,10 +6,7 @@ function handleSubmit(event) {
     var titulo = document.getElementById('titulo').value;
 	var descricao = document.getElementById('descricao').value;
     var autor = document.getElementById('autor').value;
-    var select = document.getElementById('genero');
-	var option = select.options[select.selectedIndex];
-
-    var op = option.text
+    var genero = document.getElementById('genero').value;
 
     if(!titulo || !descricao || !autor){
 		
@@ -24,7 +21,8 @@ function handleSubmit(event) {
             titulo: titulo,
             descricao: descricao,
             autor: autor,
-            option: op
+            genero: genero
+            
         };
 
         if(localStorage.getItem('biblioteca') === null){
@@ -80,12 +78,12 @@ function mostraBiblioteca(){
         var titulo = livros[i].titulo;
 		var descricao = livros[i].descricao;
 		var autor = livros[i].autor;
-        var option = livros[i].op;
+        var genero = livros[i].genero;
 		 
         bibliotecaResultado.innerHTML += '<tr><td>'+ titulo + '</td>'+
 		 							 	'<td>'+ descricao + '</td>' +
 		 	 						 	'<td>'+ autor + '</td>' +
-                                        '<td>'+ option + '</td>' +
+                                        '<td>'+ genero + '</td>' +
 		 							 	'<td><button onclick="removeLivro(\''+ titulo +'\')" class="btn btn-danger">Remover</button></td>'+
 		 							    '</tr>';
 	}
