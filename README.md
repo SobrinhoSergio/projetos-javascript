@@ -14,12 +14,12 @@ Trata-se de projetos feitos com HTML, CSS e JavaScript. Para colocar em prática
 
 ## Projetos:
 
-* :sunglasses: [Accordion-List](https://sobrinhosergio.github.io/projetos-javascript/accordion-list)
-* :last_quarter_moon: [Dark-mode](https://sobrinhosergio.github.io/projetos-javascript/dark-mode)
-* :computer: [Responsive-menu](https://sobrinhosergio.github.io/projetos-javascript/responsive-menu)
-* :blue_heart: [Modal](https://sobrinhosergio.github.io/projetos-javascript/modal)
-* :zap: [Tela-login](https://sobrinhosergio.github.io/projetos-javascript/tela-login)
-* :blue_book: [Pop-up](https://sobrinhosergio.github.io/projetos-javascript/popUp)
+* [Accordion-List](https://sobrinhosergio.github.io/projetos-javascript/accordion-list)
+* [Dark-mode](https://sobrinhosergio.github.io/projetos-javascript/dark-mode)
+* [Responsive-menu](https://sobrinhosergio.github.io/projetos-javascript/responsive-menu)
+* [Modal](https://sobrinhosergio.github.io/projetos-javascript/modal)
+* [Tela-login](https://sobrinhosergio.github.io/projetos-javascript/tela-login)
+* [Pop-up](https://sobrinhosergio.github.io/projetos-javascript/popUp)
 
 
 
