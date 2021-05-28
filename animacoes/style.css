@@ -40,6 +40,14 @@ header{
     padding: 20px 0px;
 }
 
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
 header h1 a{
     font-size: 3.0rem;
     color: #fff;
@@ -66,21 +74,14 @@ header h1 a:before{
     transition: all 0.3s ease-in-out 0s;
 }
 
-
-.menu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
-}
-
-
-
 header h1 a:hover:before{
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.btn-menu{
+    display: none;
 }
 
 header nav ul{
@@ -218,10 +219,10 @@ main #btn-cadastra{
     padding:  15px 40px;
     cursor: pointer;
     border: none;
-    border-radius: 7px;
+    border-radius: 2px;
     font-size: 2.0rem;
     font-weight: 500;
-    background-color: #fff;
+    background-color: #f5f5f5;
     color: #000;
     margin-top: 20px;
     transition: transform 0.2s;
@@ -324,9 +325,66 @@ section .conteudo #btn-assine:hover{
     }
   }
 
-
-
   aside{
+    background-color: #000;
+    padding: 120px 0;
+    
+}
+
+#sobre-mim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+#sobre-mim h2{
+    font-size: 3.0rem;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+#sobre-mim p{
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: #f5f5f5;
+}
+
+#sobre-mim img{
+    border-radius: 5px;
+}
+
+#btn-github{
+    width: 300px;
+    padding:  15px 0px;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+    font-size: 2.0rem;
+    font-weight: 700;
+    background-color: #ccc;
+    box-shadow: inset 0 0 0 0 #000;
+    color: #000;
+    transition: ease-out 0.4s;
+    margin-top: 20px;
+    border-bottom: 7px solid #aeaeae;  
+
+ }
+
+ #btn-github:hover{
+    animation-name: links;
+    animation-delay: .2s;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+ }
+
+
+.img-parallax{
     background-image: url(imagens/img4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,9 +404,14 @@ footer{
 
 .consideration{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+}
+
+footer p{
+    font-size: 2.0rem;
+    color: #fff;
+    margin-bottom: 45px;
 }
 
 .wrapper{
@@ -427,7 +490,163 @@ footer{
     color: #ff0000;
   }
 
-  footer p{
-      font-size: 2.5rem;
-      color: #fff;
-  }
+  @media (max-width: 800px){
+
+    header{
+        
+    }
+    
+    .container{
+        max-width: 700px;
+    }
+
+    header h1 a{
+        font-size: 2.5rem;
+    }
+
+    header nav ul li{
+        margin-left: 12px;
+        transition: all 0.5s;
+    }
+    
+    header nav ul li:hover{
+        transform: none;
+        transition: none;
+    }
+
+    header nav ul li a{
+        font-size: 1.7rem;
+    }
+
+    .active{
+        display: none;
+    }
+
+    .btn-menu{
+        border: none;
+        outline: none;
+        display: block;
+        z-index: 333;
+    }
+
+    span i{
+        background: #276A69; 
+        color: #fff;
+        font-size: 3.0rem;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    /*.icon-close::after{
+        content: " ";
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: url(../imagens/fechar.svg) no-repeat center center;
+        position: absolute;
+        top: 38px;
+        right: 30px;
+        cursor: pointer;
+
+    }*/
+
+
+    /*#cabecalho h1{
+       margin-bottom: 0;
+       font-size: 25px;
+       font-weight: normal;
+    }*/
+
+    .ff{
+       position: fixed;
+       top: 0;
+       right: -100%;
+       width: 100%;
+       max-width: 250px;
+       height: 100vh;
+       background: var(--bg-panel);
+       padding: 70px 20px;
+       z-index: 2;
+       transition: 0.5s;
+    }
+
+    .ff.active{
+        right: 0;
+    }
+
+    .ff ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    /*.menu li{
+        margin-top: 40px;
+       
+    }
+
+    .menu li a{
+        font-weight: normal;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .menu li i{
+        position: absolute;
+        top: 43px;
+        right: 25px;
+        color: var(--color-headings);
+
+    }
+
+    .menu li a:hover, #action{
+        border-bottom: 0;
+        color: var(--color-headings);
+    }
+    */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  [data-anime]{
+    opacity: 0;
+    transition: 3.0s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"]{
+    transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}

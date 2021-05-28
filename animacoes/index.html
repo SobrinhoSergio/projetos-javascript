@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Animações - FriWeb</title>
+    <title>Site Animações</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -18,15 +19,23 @@
 
             <h1><a href="#">Lorem Ipsum <i class="bi bi-code-slash"></i></a></h1>
 
-            <nav>
+            <button class="btn-menu">
+                <span class="icon-open">
+                    <i class="bi bi-list"></i>
+                </span>
+            </button>
+
+            <nav class="active ff">
+
                 <ul>
                     <li><a id="link-1" href="#inicio">Início</a></li>
                     <li><a id="link-2" href="#portifolio">Portifólio</a></li>
                     <li><a id="link-3" href="#sobre">Sobre</a></li>
                     <li><a id="link-4" href="#conheca">Conheça</a></li>
-
                 </ul>
+
             </nav>
+    
         
         </div>
 
@@ -54,7 +63,7 @@
 
         <div class="container">
 
-            <div id="conteudo">
+            <div id="conteudo" data-anime="left">
 
                 <span>
                     <p>80 anos de experiência </p>
@@ -62,7 +71,7 @@
                     <p id="maquina">Plataformas, Sites, Logisticas e muito mais...</p>
                 </span>
 
-            <button type="button" id="btn-cadastra">Venha conosco</button>
+                <button type="button" id="btn-cadastra">Venha conosco <i class="bi bi-arrow-right-circle"></i></button>
 
             </div>
 
@@ -89,15 +98,38 @@
 
     <aside class="aside" id="sobre">
 
-        <!--<div class="container">
+        <div class="container">
 
-        </div>-->
+            <div id="sobre-mim">
+
+                <img src="imagens/img-computer.jpg" data-anime="left">
+
+                <div data-anime="right">
+
+                    <h2>Sobre mim</h2>
+                    
+                    <p class="paragrafo">Meu nome é Sérgio, moro no Brasil, especificamente em Friburgo, Rio de Janeiro. Atualmente estou estudando em uma universidade CEFET-RJ no curso de Sistemas de Informação. Também tenho estudado bastante sozinho para aprender novas tecnologias.</p><br>
+
+                    <p class="paragrafo">Iniciei como Desenvolvedor Front End em 2020. Desde então venho dedicando cerca de várias por dia aos estudos. Vejo que estou no caminho certo pois, vejo os resultados que as horas dedicadas trazem.</p>
+
+                    <button type="button" id="btn-github">Meu GitHub <i class="bi bi-github"></i></button>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </aside>
+
+    <div class="img-parallax"></div>
 
     <footer class="footer" id="conheca">
 
         <div class="consideration container">
+
+            <p>Feito por Sérgio Sobrinho.</p>
 
             <div class="wrapper">
                         
@@ -137,8 +169,6 @@
                 </div>
 
             </div>
-
-        <p>Feito por Sérgio Sobrinho.</p>
 
      </div>
     
