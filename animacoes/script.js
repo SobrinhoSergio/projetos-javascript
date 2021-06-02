@@ -56,7 +56,7 @@ const debounce = function(func, wait, immediate) {
     
         animeScroll();
     
-    }, 150));
+    }, 100));
     
 }
 
