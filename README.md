@@ -14,15 +14,23 @@ Trata-se de projetos feitos com HTML, CSS e JavaScript. Para colocar em prática
 
 ## Projetos:
 
-* [Accordion-List](https://sobrinhosergio.github.io/projetos-javascript/accordion-list)
-* [Dark-mode](https://sobrinhosergio.github.io/projetos-javascript/dark-mode)
-* [Responsive-menu](https://sobrinhosergio.github.io/projetos-javascript/responsive-menu)
-* [Modal](https://sobrinhosergio.github.io/projetos-javascript/modal)
-* [Tela-login](https://sobrinhosergio.github.io/projetos-javascript/tela-login)
-* [Pop-up](https://sobrinhosergio.github.io/projetos-javascript/popUp)
-* [Bem-CSS](https://sobrinhosergio.github.io/projetos-javascript/bem-css)
-* [Sistema-Login](https://sobrinhosergio.github.io/projetos-javascript/sistema-login)
-
+* [Accordion-List](./accordion-list)
+* [Dark-mode](./dark-mode)
+* [Responsive-menu](./responsive-menu)
+* [Modal](./modal)
+* [Tela-login](./tela-login)
+* [Pop-up](./popUp)
+* [Bem-CSS](./bem-css)
+* [Sistema-Login](./sistema-login)
+* [responsive-travel-website](./responsive-travel-website)
+* [scroll-suave](./scroll-suave)
+* [sistema-estacionamento](./sistema-estacionamento)
+* [wildbeast-CSSGrid](./wildbeast-CSSGrid)
+* [beautysaloon](./beautysaloon)
+* [getkcal](./getkcal)
+* [responsive-menu](./responsive-menu)
+* [animacoes](./animacoes)
+* [sistema-biblioteca](./sistema-biblioteca)
 
 
 
