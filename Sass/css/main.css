@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+.texto-1 {
+  font-size: 15px;
+}
+
+.texto-2 {
+  font-size: 30px;
+}
+
+.texto-3 {
+  font-size: 45px;
+}
+
+.texto-4 {
+  font-size: 60px;
+}
+
+.texto-5 {
+  font-size: 75px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.black-text {
+  color: black;
+}
+
+/*@mixin box-shadow(){
+    box-shadow: 2px 2px 4px -2px rgba(#000, 0.6);
+}*/
+.flex, body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #7195c1;
+  color: #fff;
+}
+
+#container {
+  box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.6);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: red;
+}
+#container p {
+  background-color: gray;
+  box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.6);
+  width: 100px;
+  height: 100px;
+  color: blue;
+  color: yellow;
+}/*# sourceMappingURL=main.css.map */

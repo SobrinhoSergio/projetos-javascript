@@ -1,0 +1,62 @@
+@import 'base';
+
+$text-color: #fff;
+
+/*@mixin box-shadow(){
+    box-shadow: 2px 2px 4px -2px rgba(#000, 0.6);
+}*/
+
+@mixin box-shadow($color){
+    box-shadow: 2px 2px 4px -2px $color;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-effect($val){
+    @if $val == danger{
+        color: red;
+    }
+
+    @else if $val == alert{
+        color: yellow;
+    }
+
+    @else{
+        color: black;
+    }
+}
+
+body{
+    @extend .flex;
+    background-color: #7195c1;
+    color: $text-color;
+}
+
+#container{
+    @include box-shadow(rgba(#000, 0.6));
+    width: 200px;
+    height: 200px;
+    background-color: white;
+
+    $text-color2: blue;
+
+    color: red;
+    
+    p{  
+        background-color: gray;
+        @include box-shadow(rgba(#000, 0.6));
+        width: 100px;
+        height: 100px;
+        color: $text-color2; 
+
+        @include text-effect(alert);
+
+        
+    }
+}

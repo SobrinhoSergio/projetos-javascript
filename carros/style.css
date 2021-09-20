@@ -1,0 +1,179 @@
+@import 'config.css';
+
+/*HEADER*/
+
+header{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.header .menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.menu ul li{
+    margin: 0 30px;   
+}
+
+.menu ul li a{
+    color: var(--branco);
+    font-size: 1.7rem;
+}
+
+/*MAIN*/
+
+main{
+    height: 600px;
+
+    background-image: url(imagens/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.main .conteudo{
+    position: absolute;
+    top: 420px;
+    display: grid;
+    justify-items: center;
+    padding: 10px 0;
+}
+
+.main .conteudo h2{
+    font-size: 4.5rem;
+    color: var(--branco);
+    font-weight: normal;
+}
+
+.main .conteudo button{
+    font-size: 2.0rem;
+    margin-top: 20px;
+    background-color: red;
+    width: 250px;
+    height: 50px;
+    border: none;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+/*SECTION*/
+
+section{
+    background-color: var(--bg-panel);
+}
+
+.section{
+    padding: 90px 0px;
+}
+
+.section h2{
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+
+.section .seila{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 50px;
+    align-items: center;
+}
+
+.seila .texto h3{
+    font-size: 3.0rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.seila .texto p{
+    font-size: 1.7rem;
+}
+
+.section .texto button{
+    margin-top: 50px; 
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 1.7rem;
+    border: none;
+    background-color: var(--bg-panel);
+}
+
+.section .texto button i{
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 30px;
+
+}
+
+/*ARTICLE*/
+
+article{
+    height: 600px;
+
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.carater{
+    background-color: #121212;
+    max-width: 850px;
+    color: var(--branco);
+    border: 1.5px solid rgba(255,255,255,0.09);
+    padding: 20px;
+    position: absolute;
+    top: 470px;
+    left: 250px;
+
+}
+
+.carater h3{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.carater p{
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 50px;
+    justify-content: center;
+}
+
+footer{
+    font-size: 1.9rem
+}
